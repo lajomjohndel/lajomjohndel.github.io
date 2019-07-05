@@ -34,18 +34,18 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #2c3e50;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
-$background: #fff;
+$background: #202020;
 $background-alt: #f2f2f5;
 
 // Define border colors
 $border: #dcd9d9;
 
 // Define text colors
-$heading: #374054;
+$heading: #f5f6f8;
 $text: #74808a;
 
 /*
@@ -160,6 +160,7 @@ header {
         margin: 0;
         border-bottom-right-radius: 4px;
         border-bottom-left-radius: 4px;
+        width: 100%;
     }
 
     li {
@@ -168,7 +169,7 @@ header {
 
     a {
         display: block;
-        color: $base-color;
+        color: $heading;
         padding: 10px;
 
         &:hover {
@@ -378,7 +379,7 @@ footer {
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        color: lighten($base-color, 30%);
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -450,7 +451,7 @@ footer {
     border-bottom: 1px solid $border;
 
     h2 {
-        color: $heading;
+        color: $text;
     }
 
     p {
@@ -471,7 +472,7 @@ footer {
     border-bottom: 1px solid $border;
 
     h2 {
-        color: $heading;
+        color: $text;
     }
 }
 
@@ -516,7 +517,7 @@ footer {
     h3 {
         font-size: 1.5em;
         font-weight: 300;
-        color: $heading;
+        color: $text;
         display: inline-block;
         margin: 0;
     }
@@ -582,7 +583,7 @@ footer {
     text-align: center;
 
     h2 {
-        color: $heading;
+        color: $text;
         margin-bottom: 50px;
     }
 }
@@ -598,7 +599,7 @@ footer {
         font-weight: 500;
         float: left;
         margin: 0;
-        color: $heading;
+        color: $text;
     }
 
     span {
@@ -636,7 +637,7 @@ footer {
     text-align: center;
 
     h2 {
-        color: $heading;
+        color: $text;
         margin-bottom: 50px;
     }
 }
@@ -664,7 +665,7 @@ footer {
     h3 {
         font-size: 1.5em;
         font-weight: 300;
-        color: $heading;
+        color: $text;
         margin: 0 0 15px 0;
     }
 
@@ -699,7 +700,7 @@ footer {
     text-align: center;
 
     h2 {
-        color: $heading;
+        color: $text;
         margin-bottom: 50px;
     }
 
@@ -714,8 +715,8 @@ footer {
         display: inline-block;
         margin: 7px;
         padding: 5px 10px;
-        color: $heading;
-        background: darken($background-alt, 5%);
+        color: $text;
+        background: $background-alt;
         list-style: none;
         cursor: default;
         font-size: 1.2em;
