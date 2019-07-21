@@ -4623,7 +4623,7 @@ button.close {
   .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
     bottom: 0;
     border-top-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-top .arrow::after,
   .bs-popover-auto[x-placement^="top"] .arrow::after {
     bottom: 1px;
@@ -4643,7 +4643,7 @@ button.close {
   .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
     left: 0;
     border-right-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-right .arrow::after,
   .bs-popover-auto[x-placement^="right"] .arrow::after {
     left: 1px;
@@ -4660,7 +4660,7 @@ button.close {
   .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
     top: 0;
     border-bottom-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-bottom .arrow::after,
   .bs-popover-auto[x-placement^="bottom"] .arrow::after {
     top: 1px;
@@ -4689,7 +4689,7 @@ button.close {
   .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
     right: 0;
     border-left-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-left .arrow::after,
   .bs-popover-auto[x-placement^="left"] .arrow::after {
     right: 1px;
@@ -7283,7 +7283,7 @@ body {
     content: '';
     width: 400px;
     height: 600px;
-    border: 2px solid rgba(255, 255, 255, 0.05);
+    border: 3px solid rgba(255, 255, 255, 0.05);
     z-index: -1;
     -webkit-transform: rotate(-30deg);
     -moz-transform: rotate(-30deg);
@@ -7298,7 +7298,7 @@ body {
     content: '';
     width: 400px;
     height: 400px;
-    border: 2px solid rgba(255, 255, 255, 0.05);
+    border: 3px solid rgba(255, 255, 255, 0.05);
     z-index: -1;
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -8244,7 +8244,7 @@ textarea.form-control {
   width: 100%; }
   .ftco-counter .text strong.number {
     font-weight: 400;
-    font-size: 180px;
+    font-size: 100px;
     color: #2f89fc; }
     @media (max-width: 767.98px) {
       .ftco-counter .text strong.number {
@@ -8483,7 +8483,7 @@ textarea.form-control {
   padding: 10% 7%; }
   @media (min-width: 768px) {
     .block-3 .image {
-      width: 40%;
+      width: 50%;
       padding: 10% 7%; } }
   .block-3 .image .icon {
     width: 100px;
@@ -8783,3 +8783,20 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+.download-cv{
+  color: #fff;
+  padding: 1em;
+  border: 1px solid #fff;
+  display: block;
+  text-align: center;
+}
+.download-cv:hover{
+  background: #fff;
+  color: #121212
+}
+html { overflow-y: scroll; }
+
+.colorlib-nav-toggle{
+  position: fixed;
+  right:10%
+}
