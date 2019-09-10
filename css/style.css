@@ -8800,3 +8800,8 @@ html { overflow-y: scroll; }
   position: fixed;
   right:10%
 }
+@media (max-width: 575.98px) {
+  .skillset-sub-heading{
+    font-size: 8pt
+  }
+}
