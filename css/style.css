@@ -8805,3 +8805,29 @@ html { overflow-y: scroll; }
     font-size: 8pt
   }
 }
+
+
+@media (max-width: 768px) {
+  #headline, #hello-title{
+    font-size: 1em;
+  }
+
+  .ftco-footer-social li a{
+    height: 30px;
+    width: 30px;
+  }
+  .sm-border-bottom{
+    border-bottom: 1px solid #a2a2a2;
+  }
+}
+.ftco-footer-social li a span,
+.ftco-counter .text strong.number{
+  color: cadetblue;
+}
+body .KW_progressBar{
+  background-color: cadetblue;
+}
+.ftco-footer-social li a{
+  color: cadetblue;
+  background: none;
+}
