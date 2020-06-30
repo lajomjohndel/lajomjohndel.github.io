@@ -8831,3 +8831,7 @@ body .KW_progressBar{
   color: cadetblue;
   background: none;
 }
+
+.img-fluid{
+  object-fit: contain;
+}
