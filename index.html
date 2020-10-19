@@ -450,8 +450,18 @@
                 </ul>
               </div>
               <div class="ftco-footer-widget">
-                <h2 class="mb-3">Email me</h2>
-                <p class="h4 email"><span class="icon-envelope"></span><a href="mailto:johndellajom@gmail.com"> johndellajom@gmail.com</a></p>
+                <h4 class="mb-3"><span class="icon-envelope"></span> Contact</h4>
+
+                <form id="contact-form" action="https://api.staticforms.xyz/submit" method="post">
+                    <!-- Replace with accesKey sent to your email -->
+                    <input type="hidden" name="accessKey" value="24e8b72d-4a94-4eb6-adc7-c9301a1324a7">
+                    <input placeholder="Name" class="form-control mb-3" type="text" name="name">
+                    <input placeholder="Subject" class="form-control mb-3" type="text" name="subject">
+                    <input placeholder="Email" class="form-control mb-3" type="text" name="email">
+                    <textarea class="form-control mb-3" name="message" placeholder="Message" rows="5"></textarea> 
+                    <input class="btn btn-info btn-block" type="submit" value="Submit" />
+                </form>
+
               </div>
             </div>
           </div>
@@ -481,8 +491,28 @@
   <script type="text/javascript">
     var lazyLoadInstance = new LazyLoad({
       elements_selector: ".lazy"
-      // ... more custom settings?
     });
+
+  $("#contact-form").submit(function(e) {
+
+      e.preventDefault();
+
+      var form = $(this);
+      var url = form.attr('action');
+      
+      $.ajax({
+             type: "POST",
+             url: url,
+             data: form.serialize(), // serializes the form's elements.
+             success: function(res)
+             {
+                if( res.success == true ) {
+                  $('#contact-form').fadeOut();
+                  $('#contact-form').after('<p class="alert alert-success text-dark">Thank you! <br> Your message has been sent to Johndel.<br>He will contact you very soon! </p>');
+                }
+             }
+           });    
+  });
   </script>
 </body>
 </html>
