@@ -456,10 +456,10 @@
                     <!-- Replace with accesKey sent to your email -->
                     <input type="hidden" name="accessKey" value="24e8b72d-4a94-4eb6-adc7-c9301a1324a7">
                     <input type="hidden" name="replyTo" value="@">
-                    <input placeholder="Name" class="form-control mb-3" type="text" name="name">
-                    <input placeholder="Subject" class="form-control mb-3" type="text" name="subject">
-                    <input placeholder="Email" class="form-control mb-3" type="text" name="email">
-                    <textarea class="form-control mb-3" name="message" placeholder="Message" rows="5"></textarea> 
+                    <input placeholder="Name" class="form-control mb-3" type="text" name="name" required>
+                    <input placeholder="Subject" class="form-control mb-3" type="text" name="subject" required>
+                    <input placeholder="Email" class="form-control mb-3" type="email" name="email" required>
+                    <textarea class="form-control mb-3" name="message" placeholder="Message" rows="5" required></textarea> 
                     <input class="btn btn-info btn-block" type="submit" value="Submit" />
                 </form>
 
